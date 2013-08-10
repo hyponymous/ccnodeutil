@@ -36,3 +36,6 @@ See also the bottom of `HelloWorld::init()`. This example builds a table of 8 ro
     alignNodeToParent(outer, ALIGNMENT_CENTER);
 ```
 
+# Screenshots
+
+![LayoutLayer in Action](http://hyponymo.us/wordpress/wp-content/uploads/2013/08/LayoutLayer_HelloWorld.png)
