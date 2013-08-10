@@ -1,7 +1,7 @@
-ccnodeutil
+CCNodeUtil
 ==========
 
-Layout and positioning utilities for Cocos2d-x
+Layout and positioning utilities for [Cocos2d-x](http://www.cocos2d-x.org/ "Cocos2d-x").
 
 # Example
 
