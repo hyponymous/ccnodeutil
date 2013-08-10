@@ -1,8 +1,12 @@
-#include "HelloWorldScene.h"
+#include "HelloWorld.h"
+
+#include "FlexNode.h"
+#include "LayoutLayer.h"
 #include "SimpleAudioEngine.h"
 
-using namespace cocos2d;
+USING_NS_CC_UTIL;
 using namespace CocosDenshion;
+using namespace cocos2d;
 
 CCScene* HelloWorld::scene()
 {
@@ -62,15 +66,35 @@ bool HelloWorld::init()
     // add the label as a child to this layer
     this->addChild(pLabel, 1);
 
-    // add "HelloWorld" splash screen"
-    CCSprite* pSprite = CCSprite::create("HelloWorld.png");
+    // Example Layout Codes
 
-    // position the sprite on the center of the screen
-    pSprite->setPosition( ccp(size.width/2, size.height/2) );
+    CCSize padding = CCSizeMake(20, 12);
 
-    // add the sprite as a child to this layer
-    this->addChild(pSprite, 0);
-    
+    LayoutLayer *outer = vll()
+        ->setWidthSizingPolicy(LAYOUT_SIZING_EQUAL)
+        ->setPadding(padding);
+
+    for (int i = 0; i < 8; ++i)
+    {
+        LayoutLayer *row = hll()->setPadding(padding);
+
+        row->addChild(CCSprite::create("Icon.png"));
+        row->addChild(FlexNode::create());
+
+        CCLabelTTF *label = CCLabelTTF::create(
+            toString(2345 * i).c_str(),
+            "Thonburi",
+            34
+        );
+        row->addChild(label);
+
+        outer->addChild(row);
+    }
+
+    outer->fitToContents();
+    this->addChild(outer);
+    alignNodeToParent(outer, ALIGNMENT_CENTER);
+
     return true;
 }
 
