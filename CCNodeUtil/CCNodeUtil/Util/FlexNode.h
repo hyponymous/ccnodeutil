@@ -4,8 +4,8 @@
  *   DATE: Tue May 7 14:25:45 PDT 2013
  */
 
-#ifndef __nback_FLEXNODE_H__
-#define __nback_FLEXNODE_H__
+#ifndef __CCNODEUTIL_FLEXNODE_H__
+#define __CCNODEUTIL_FLEXNODE_H__
 
 #include "cocos2d.h"
 #include "CCNodeUtil.h"
@@ -44,5 +44,5 @@ private:
 
 NS_CC_UTIL_END
 
-#endif /* __nback_FLEXNODE_H__ */
+#endif /* __CCNODEUTIL_FLEXNODE_H__ */
 

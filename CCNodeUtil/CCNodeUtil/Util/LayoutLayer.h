@@ -4,8 +4,8 @@
  *   DATE: Sun Jul 14 12:41:38 PDT 2013
  */
 
-#ifndef __nback_LAYOUTLAYER_H__
-#define __nback_LAYOUTLAYER_H__
+#ifndef __CCNODEUTIL_LAYOUTLAYER_H__
+#define __CCNODEUTIL_LAYOUTLAYER_H__
 
 #include "cocos2d.h"
 #include "CCNodeUtil.h"
@@ -193,5 +193,5 @@ private:
 
 NS_CC_UTIL_END
 
-#endif /* __nback_LAYOUTLAYER_H__ */
+#endif /* __CCNODEUTIL_LAYOUTLAYER_H__ */
 

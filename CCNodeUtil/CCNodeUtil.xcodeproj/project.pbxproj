@@ -211,7 +211,6 @@
 		501DF44517B6ED7200E4410F /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501DF44417B6ED7200E4410F /* AppDelegate.cpp */; };
 		501DF44817B6ED7200E4410F /* HelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501DF44717B6ED7200E4410F /* HelloWorld.cpp */; };
 		501DF45517B6EF8C00E4410F /* LayoutLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501DF45017B6EF8C00E4410F /* LayoutLayer.cpp */; };
-		501DF45617B6EF8C00E4410F /* CCNodeUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501DF45217B6EF8C00E4410F /* CCNodeUtil.cpp */; };
 		501DF45917B6F4F200E4410F /* FlexNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 501DF45717B6F4F200E4410F /* FlexNode.cpp */; };
 /* End PBXBuildFile section */
 
@@ -665,7 +664,6 @@
 		501DF44717B6ED7200E4410F /* HelloWorld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorld.cpp; path = Classes/HelloWorld.cpp; sourceTree = "<group>"; };
 		501DF45017B6EF8C00E4410F /* LayoutLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LayoutLayer.cpp; sourceTree = "<group>"; };
 		501DF45117B6EF8C00E4410F /* LayoutLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutLayer.h; sourceTree = "<group>"; };
-		501DF45217B6EF8C00E4410F /* CCNodeUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCNodeUtil.cpp; sourceTree = "<group>"; };
 		501DF45317B6EF8C00E4410F /* CCNodeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNodeUtil.h; sourceTree = "<group>"; };
 		501DF45717B6F4F200E4410F /* FlexNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlexNode.cpp; sourceTree = "<group>"; };
 		501DF45817B6F4F200E4410F /* FlexNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexNode.h; sourceTree = "<group>"; };
@@ -1616,7 +1614,6 @@
 				501DF45817B6F4F200E4410F /* FlexNode.h */,
 				501DF45017B6EF8C00E4410F /* LayoutLayer.cpp */,
 				501DF45117B6EF8C00E4410F /* LayoutLayer.h */,
-				501DF45217B6EF8C00E4410F /* CCNodeUtil.cpp */,
 				501DF45317B6EF8C00E4410F /* CCNodeUtil.h */,
 			);
 			path = Util;
@@ -1877,7 +1874,6 @@
 				501DF44517B6ED7200E4410F /* AppDelegate.cpp in Sources */,
 				501DF44817B6ED7200E4410F /* HelloWorld.cpp in Sources */,
 				501DF45517B6EF8C00E4410F /* LayoutLayer.cpp in Sources */,
-				501DF45617B6EF8C00E4410F /* CCNodeUtil.cpp in Sources */,
 				501DF45917B6F4F200E4410F /* FlexNode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2003,7 +1999,7 @@
 				501DF44A17B6ED7200E4410F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		501DF44B17B6ED7200E4410F /* Build configuration list for PBXNativeTarget "CCNodeUtil" */ = {
 			isa = XCConfigurationList;
@@ -2012,6 +2008,7 @@
 				501DF44D17B6ED7200E4410F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

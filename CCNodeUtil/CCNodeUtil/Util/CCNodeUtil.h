@@ -4,8 +4,8 @@
  *   DATE: Fri Mar 15 19:21:37 PDT 2013
  */
 
-#ifndef __nback__Util__
-#define __nback__Util__
+#ifndef __COCOS2DNODEUTIL_H__
+#define __COCOS2DNODEUTIL_H__
 
 #include <iomanip>
 
@@ -90,9 +90,17 @@ static inline double normalizeAngle(double angle);
 static inline CCPoint centerOf(const CCRect& rect);
 static inline CCRect outsetOf(const CCRect& rect, float outset);
 
-void updateScreenPoints();
-
-std::vector<std::string> split(const std::string& s, char delim);
+static std::vector<std::string> split(const std::string& s, char delim)
+{
+    std::vector<std::string> elements;
+    std::stringstream ss(s);
+    std::string token;
+    while (std::getline(ss, token, delim))
+    {
+        elements.push_back(token);
+    }
+    return elements;
+}
 
 // ========================================================================== //
 // cocos2d objects                                                            //
@@ -736,5 +744,5 @@ static inline void setColorAndOpacity(CCRGBAProtocol *obj, const ccColor4B& colo
 
 NS_CC_UTIL_END
 
-#endif /* __nback__Util__ */
+#endif /* __COCOS2DNODEUTIL_H__ */
 
